@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { usePokemon } from "../../hooks/usePokemon";
 import { background } from "../../utils/BackgroundsByType";
-import { Loader } from "../Loader";
+import { Loader } from "../Loader/index";
 import styles from "./styles.module.scss";
 
 interface Props {
