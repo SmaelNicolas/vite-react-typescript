@@ -2,16 +2,16 @@ import { PokemonCard } from "../PokemonCard";
 import styles from "./styles.module.scss";
 
 interface Props {
-	pokemonsUrl?: string[] | null;
-	page: number;
-	perPage: number;
+	pokemonsUrls?: string[] | null;
+	page?: number;
+	perPage?: number;
 }
 
-export const PokemonList = ({ pokemonsUrl, page, perPage }: Props) => {
+export const PokemonList = ({ pokemonsUrls, page, perPage }: Props) => {
 	return (
 		<div>
-			{pokemonsUrl?.map((pokemonsUrl) => (
-				<PokemonCard key={pokemonsUrl} url={pokemonsUrl} />
+			{pokemonsUrls?.map((pokemonsUrls) => (
+				<PokemonCard key={pokemonsUrls} url={pokemonsUrls} />
 			))}
 		</div>
 	);
