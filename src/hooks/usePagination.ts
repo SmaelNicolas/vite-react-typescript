@@ -9,13 +9,13 @@ export const usePagination = () => {
 
 	const nextPage = () => {
 		changePage(page + 1);
-		navigate(`/?page-${page + 1}`);
+		navigate(`/?page=${page + 1}`);
 		window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 	};
 
 	const previousPage = () => {
 		changePage(page - 1);
-		navigate(`/?page-${page - 1}`);
+		navigate(`/?page=${page - 1}`);
 		window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 	};
 
