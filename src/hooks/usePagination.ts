@@ -26,7 +26,7 @@ export const usePagination = () => {
 
 	useEffect(() => {
 		changePage(parseInt(searchParams.get("page")!) || 1);
-	});
+	}, [searchParams]);
 
 	return { page, nextPage, previousPage, changePage, backToHome };
 };
