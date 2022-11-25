@@ -15,7 +15,7 @@ export const Home = () => {
 	return (
 		<div className={styles.home}>
 			<header>
-				<div>
+				<div onClick={backToHome}>
 					<PokeballIconSmall />
 					<span>Pokedex</span>
 				</div>
