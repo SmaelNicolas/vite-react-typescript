@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { PokeballIconSmall } from "../../assets/pokeball";
+import { Filters } from "../../components/Filters";
 import { Pagination } from "../../components/Pagination";
 import { PokemonList } from "../../components/PokemonList";
 import { PokemonContext } from "../../context/PokemonContext";
@@ -20,6 +21,7 @@ export const Home = () => {
 					<span>Pokedex</span>
 				</div>
 			</header>
+			<Filters />
 			<PokemonList
 				page={page}
 				perPage={perPage}
